@@ -31,4 +31,17 @@ print(good_reviews_dataframe.iloc[0, 8])
 print()
 
 
+#How many reviews are there of each score?
+print("Score of 1: ")
+print(music_review_dataframe[music_review_dataframe['overall'] == 1.0].count().overall)
+print("Score of 2: ")
+print(music_review_dataframe[music_review_dataframe['overall'] == 2.0].count().overall)
+print("Score of 3: ")
+print(music_review_dataframe[music_review_dataframe['overall'] == 3.0].count().overall)
+print("Score of 4: ")
+print(music_review_dataframe[music_review_dataframe['overall'] == 4.0].count().overall)
+print("Score of 5: ")
+print(music_review_dataframe[music_review_dataframe['overall'] == 5.0].count().overall)
+
 #Looks like we will need to do some data cleaning to remove stopwords and punctuation in order to perform something like Naive Bayes.
+
