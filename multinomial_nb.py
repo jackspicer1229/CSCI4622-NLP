@@ -10,7 +10,6 @@ from sklearn.metrics import classification_report, confusion_matrix, precision_s
 
 def clean_dataframe(df):
 	df['clean_reviewText'] = hero.clean(df['reviewText'])
-
 	return df
 
 
